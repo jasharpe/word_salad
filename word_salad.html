@@ -167,6 +167,7 @@
         let correctCount = 0;
         let incorrectCount = 0;
         let currentQuestion = null;
+        let showingAnswer = false; // To track if we are showing unscrambled question after answering
         
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
@@ -174,6 +175,29 @@
                 [array[i], array[j]] = [array[j], array[i]];
             }
             return array;
+        }
+
+        function scrambleWord(word) {
+            // Keep first and last character in place, scramble the middle characters
+            if (word.length <= 3) return word; // Too short to meaningfully scramble
+            const firstLetter = word[0];
+            const lastLetter = word[word.length - 1];
+            
+            // Extract the middle portion without first and last char
+            const middle = word.slice(1, -1).split('');
+            
+            // Shuffle the middle portion
+            shuffleArray(middle);
+            
+            // Reconstruct the word
+            return firstLetter + middle.join('') + lastLetter;
+        }
+
+        function scrambleWords(words) {
+            // First shuffle the order of words
+            const shuffledWords = shuffleArray([...words]);
+            // Then scramble each word internally
+            return shuffledWords.map(scrambleWord);
         }
 
         function updateScoreboard() {
@@ -188,12 +212,12 @@
                 return;
             }
 
+            showingAnswer = false;
             // Pick a random question
             const randomIndex = Math.floor(Math.random() * questions.length);
             currentQuestion = questions.splice(randomIndex, 1)[0]; // remove the chosen question
 
-            // Scramble question words
-            const scrambled = shuffleArray([...currentQuestion.questionWords]);
+            const scrambled = scrambleWords(currentQuestion.questionWords);
             const scrambledText = scrambled.join(" ");
             document.getElementById("scrambled-words").textContent = scrambledText;
 
@@ -208,8 +232,9 @@
             });
 
             // Clear feedback
-            document.getElementById("feedback").textContent = "";
-            document.getElementById("feedback").className = "feedback";
+            const feedbackEl = document.getElementById("feedback");
+            feedbackEl.textContent = "";
+            feedbackEl.className = "feedback";
         }
 
         function checkAnswer(selected) {
@@ -225,9 +250,14 @@
             }
 
             updateScoreboard();
+            showingAnswer = true;
+
+            // After answering, unscramble the question words and show it
+            const unscrambledText = currentQuestion.questionWords.join(" ");
+            document.getElementById("scrambled-words").textContent = unscrambledText;
 
             // After a short delay, show the next question
-            setTimeout(displayQuestion, 2000);
+            setTimeout(displayQuestion, 3000);
         }
 
         function endGame() {
@@ -244,6 +274,5 @@
         updateScoreboard();
         displayQuestion();
     </script>
-
 </body>
 </html>
