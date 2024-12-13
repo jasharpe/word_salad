@@ -811,7 +811,7 @@
 },
 {
     "questionWords": ["Which", "planet", "in", "our", "solar", "system", "is", "farthest", "from", "the", "Sun?"],
-    "choices": ["Neptune", "Uranus", "Pluto (dwarf planet)", "Saturn"],
+    "choices": ["Neptune", "Uranus", "Venus", "Saturn"],
     "correctAnswer": "Neptune"
 },
 {
@@ -835,7 +835,7 @@
     "correctAnswer": "Seoul"
 },
 {
-    "questionWords": ["Which", "insect", "is", "responsible", "for", "most", "human", "deaths", "per", "year?", "due", "to", "disease", "transmission?"],
+    "questionWords": ["Which", "insect", "is", "responsible", "for", "most", "human", "deaths", "per", "year", "due", "to", "disease", "transmission?"],
     "choices": ["Mosquito", "Fly", "Bee", "Tick"],
     "correctAnswer": "Mosquito"
 },
@@ -1001,7 +1001,7 @@
 },
 {
     "questionWords": ["What", "is", "the", "largest", "living", "fish", "in", "the", "ocean?"],
-    "choices": ["Whale Shark", "Great White Shark", "Manta Ray", "Blue Whale (mammal, not fish)"],
+    "choices": ["Whale Shark", "Great White Shark", "Manta Ray", "Blue Whale"],
     "correctAnswer": "Whale Shark"
 },
 {
