@@ -1,0 +1,502 @@
+[
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "France?"],
+    "choices": ["Paris", "Berlin", "Rome", "Madrid"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "questionWords": ["Which", "planet", "is", "known", "as", "the", "Red", "Planet?"],
+    "choices": ["Mars", "Venus", "Jupiter", "Mercury"],
+    "correctAnswer": "Mars"
+  },
+  {
+    "questionWords": ["Who", "wrote", "the", "play", "Romeo", "and", "Juliet?"],
+    "choices": ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
+    "correctAnswer": "William Shakespeare"
+  },
+  {
+    "questionWords": ["Which", "ocean", "is", "the", "largest", "in", "the", "world?"],
+    "choices": ["Pacific", "Atlantic", "Indian", "Arctic"],
+    "correctAnswer": "Pacific"
+  },
+  {
+    "questionWords": ["What", "is", "the", "chemical", "symbol", "for", "Gold?"],
+    "choices": ["Au", "Ag", "Fe", "Pt"],
+    "correctAnswer": "Au"
+  },
+  {
+    "questionWords": ["In", "which", "country", "are", "the", "Pyramids", "of", "Giza", "located?"],
+    "choices": ["Egypt", "Mexico", "China", "Peru"],
+    "correctAnswer": "Egypt"
+  },
+  {
+    "questionWords": ["Who", "was", "the", "first", "President", "of", "the", "United", "States?"],
+    "choices": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "questionWords": ["What", "is", "the", "largest", "mammal", "on", "Earth?"],
+    "choices": ["Blue Whale", "Elephant", "Hippopotamus", "Giraffe"],
+    "correctAnswer": "Blue Whale"
+  },
+  {
+    "questionWords": ["In", "which", "continent", "is", "the", "Sahara", "Desert", "located?"],
+    "choices": ["Africa", "Asia", "Australia", "South America"],
+    "correctAnswer": "Africa"
+  },
+  {
+    "questionWords": ["Which", "element", "has", "the", "chemical", "symbol", "O?"],
+    "choices": ["Oxygen", "Osmium", "Gold", "Tin"],
+    "correctAnswer": "Oxygen"
+  },
+  {
+    "questionWords": ["Who", "painted", "the", "Mona", "Lisa?"],
+    "choices": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Vincent van Gogh"],
+    "correctAnswer": "Leonardo da Vinci"
+  },
+  {
+    "questionWords": ["What", "is", "the", "largest", "planet", "in", "our", "solar", "system?"],
+    "choices": ["Jupiter", "Saturn", "Neptune", "Earth"],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "questionWords": ["In", "which", "city", "is", "the", "Statue", "of", "Liberty", "located?"],
+    "choices": ["New York City", "Boston", "Philadelphia", "Washington D.C."],
+    "correctAnswer": "New York City"
+  },
+  {
+    "questionWords": ["Which", "gas", "do", "plants", "use", "for", "photosynthesis?"],
+    "choices": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+    "correctAnswer": "Carbon Dioxide"
+  },
+  {
+    "questionWords": ["Who", "discovered", "penicillin?"],
+    "choices": ["Alexander Fleming", "Marie Curie", "Louis Pasteur", "Isaac Newton"],
+    "correctAnswer": "Alexander Fleming"
+  },
+  {
+    "questionWords": ["What", "is", "the", "largest", "land", "animal?"],
+    "choices": ["African Elephant", "White Rhino", "Hippopotamus", "Giraffe"],
+    "correctAnswer": "African Elephant"
+  },
+  {
+    "questionWords": ["Which", "country", "invented", "pizza?"],
+    "choices": ["Italy", "France", "Greece", "United States"],
+    "correctAnswer": "Italy"
+  },
+  {
+    "questionWords": ["Who", "developed", "the", "theory", "of", "relativity?"],
+    "choices": ["Albert Einstein", "Niels Bohr", "Marie Curie", "Max Planck"],
+    "correctAnswer": "Albert Einstein"
+  },
+  {
+    "questionWords": ["Which", "continent", "is", "home", "to", "the", "Amazon", "Rainforest?"],
+    "choices": ["South America", "Africa", "Asia", "North America"],
+    "correctAnswer": "South America"
+  },
+  {
+    "questionWords": ["What", "is", "the", "tallest", "mountain", "in", "the", "world?"],
+    "choices": ["Mount Everest", "K2", "Kangchenjunga", "Makalu"],
+    "correctAnswer": "Mount Everest"
+  },
+  {
+    "questionWords": ["Who", "is", "the", "author", "of", "Harry", "Potter?"],
+    "choices": ["J.K. Rowling", "J.R.R. Tolkien", "C.S. Lewis", "George R.R. Martin"],
+    "correctAnswer": "J.K. Rowling"
+  },
+  {
+    "questionWords": ["Which", "country", "is", "famous", "for", "the", "Taj", "Mahal?"],
+    "choices": ["India", "Pakistan", "Iran", "Turkey"],
+    "correctAnswer": "India"
+  },
+  {
+    "questionWords": ["In", "which", "month", "does", "the", "U.S.", "celebrate", "Independence", "Day?"],
+    "choices": ["July", "June", "May", "April"],
+    "correctAnswer": "July"
+  },
+  {
+    "questionWords": ["Which", "bird", "is", "often", "associated", "with", "delivering", "babies", "in", "folklore?"],
+    "choices": ["Stork", "Swan", "Eagle", "Robin"],
+    "correctAnswer": "Stork"
+  },
+  {
+    "questionWords": ["Who", "was", "the", "first", "person", "to", "walk", "on", "the", "Moon?"],
+    "choices": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
+    "correctAnswer": "Neil Armstrong"
+  },
+  {
+    "questionWords": ["What", "is", "the", "currency", "of", "Japan?"],
+    "choices": ["Yen", "Dollar", "Euro", "Pound"],
+    "correctAnswer": "Yen"
+  },
+  {
+    "questionWords": ["Which", "invention", "is", "Thomas", "Edison", "famous", "for?"],
+    "choices": ["Light Bulb", "Telephone", "Airplane", "Television"],
+    "correctAnswer": "Light Bulb"
+  },
+  {
+    "questionWords": ["Which", "sea", "is", "the", "saltiest", "body", "of", "water", "on", "Earth?"],
+    "choices": ["Dead Sea", "Red Sea", "Caspian Sea", "Mediterranean Sea"],
+    "correctAnswer": "Dead Sea"
+  },
+  {
+    "questionWords": ["Who", "wrote", "the", "novel", "1984?"],
+    "choices": ["George Orwell", "Aldous Huxley", "Ernest Hemingway", "F. Scott Fitzgerald"],
+    "correctAnswer": "George Orwell"
+  },
+  {
+    "questionWords": ["What", "is", "the", "smallest", "prime", "number?"],
+    "choices": ["2", "3", "5", "7"],
+    "correctAnswer": "2"
+  },
+  {
+    "questionWords": ["Which", "instrument", "did", "Wolfgang", "Amadeus", "Mozart", "primarily", "play?"],
+    "choices": ["Piano", "Violin", "Flute", "Harp"],
+    "correctAnswer": "Piano"
+  },
+  {
+    "questionWords": ["In", "which", "U.S.", "state", "is", "Hollywood", "located?"],
+    "choices": ["California", "New York", "Texas", "Florida"],
+    "correctAnswer": "California"
+  },
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "Australia?"],
+    "choices": ["Canberra", "Sydney", "Melbourne", "Brisbane"],
+    "correctAnswer": "Canberra"
+  },
+  {
+    "questionWords": ["Which", "continent", "has", "the", "most", "countries?"],
+    "choices": ["Africa", "Asia", "Europe", "North America"],
+    "correctAnswer": "Africa"
+  },
+  {
+    "questionWords": ["Who", "proposed", "the", "theory", "of", "evolution", "by", "natural", "selection?"],
+    "choices": ["Charles Darwin", "Gregor Mendel", "Alfred Wallace", "Louis Pasteur"],
+    "correctAnswer": "Charles Darwin"
+  },
+  {
+    "questionWords": ["What", "is", "the", "main", "language", "spoken", "in", "Brazil?"],
+    "choices": ["Portuguese", "Spanish", "English", "French"],
+    "correctAnswer": "Portuguese"
+  },
+  {
+    "questionWords": ["Who", "is", "the", "Greek", "god", "of", "the", "sea?"],
+    "choices": ["Poseidon", "Zeus", "Hades", "Apollo"],
+    "correctAnswer": "Poseidon"
+  },
+  {
+    "questionWords": ["Which", "country", "is", "known", "as", "the", "Land", "of", "the", "Rising", "Sun?"],
+    "choices": ["Japan", "China", "South Korea", "Thailand"],
+    "correctAnswer": "Japan"
+  },
+  {
+    "questionWords": ["What", "is", "the", "hardest", "natural", "substance", "on", "Earth?"],
+    "choices": ["Diamond", "Ruby", "Sapphire", "Emerald"],
+    "correctAnswer": "Diamond"
+  },
+  {
+    "questionWords": ["Who", "composed", "the", "Four", "Seasons?"],
+    "choices": ["Antonio Vivaldi", "Johann Bach", "Ludwig van Beethoven", "Wolfgang Mozart"],
+    "correctAnswer": "Antonio Vivaldi"
+  },
+  {
+    "questionWords": ["Which", "animal", "is", "known", "as", "the", "King", "of", "the", "Jungle?"],
+    "choices": ["Lion", "Tiger", "Elephant", "Leopard"],
+    "correctAnswer": "Lion"
+  },
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "Canada?"],
+    "choices": ["Ottawa", "Toronto", "Montreal", "Vancouver"],
+    "correctAnswer": "Ottawa"
+  },
+  {
+    "questionWords": ["Which", "organ", "is", "responsible", "for", "pumping", "blood", "throughout", "the", "body?"],
+    "choices": ["Heart", "Liver", "Lung", "Brain"],
+    "correctAnswer": "Heart"
+  },
+  {
+    "questionWords": ["What", "is", "the", "largest", "continent", "on", "Earth?"],
+    "choices": ["Asia", "Africa", "North America", "Europe"],
+    "correctAnswer": "Asia"
+  },
+  {
+    "questionWords": ["Who", "is", "known", "for", "formulating", "the", "laws", "of", "motion?"],
+    "choices": ["Isaac Newton", "Galileo Galilei", "Johannes Kepler", "Nikola Tesla"],
+    "correctAnswer": "Isaac Newton"
+  },
+  {
+    "questionWords": ["Which", "country", "is", "home", "to", "the", "Kangaroo?"],
+    "choices": ["Australia", "South Africa", "Canada", "Brazil"],
+    "correctAnswer": "Australia"
+  },
+  {
+    "questionWords": ["What", "is", "the", "currency", "of", "the", "United", "Kingdom?"],
+    "choices": ["Pound Sterling", "Euro", "Dollar", "Yen"],
+    "correctAnswer": "Pound Sterling"
+  },
+  {
+    "questionWords": ["Who", "discovered", "gravity", "when", "an", "apple", "fell", "from", "a", "tree?"],
+    "choices": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+    "correctAnswer": "Isaac Newton"
+  },
+  {
+    "questionWords": ["What", "is", "the", "largest", "internal", "organ", "in", "the", "human", "body?"],
+    "choices": ["Liver", "Lung", "Heart", "Kidney"],
+    "correctAnswer": "Liver"
+  },
+  {
+    "questionWords": ["In", "which", "country", "would", "you", "find", "the", "Colosseum?"],
+    "choices": ["Italy", "Greece", "Egypt", "Spain"],
+    "correctAnswer": "Italy"
+  },
+  {
+    "questionWords": ["Which", "gas", "makes", "up", "about", "78%", "of", "the", "Earth's", "atmosphere?"],
+    "choices": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
+    "correctAnswer": "Nitrogen"
+  },
+  {
+    "questionWords": ["Who", "wrote", "the", "novel", "Pride", "and", "Prejudice?"],
+    "choices": ["Jane Austen", "Charlotte Brontë", "Emily Brontë", "Mary Shelley"],
+    "correctAnswer": "Jane Austen"
+  },
+  {
+    "questionWords": ["Which", "river", "is", "the", "longest", "in", "the", "world?"],
+    "choices": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+    "correctAnswer": "Nile"
+  },
+  {
+    "questionWords": ["What", "is", "the", "tallest", "building", "in", "the", "world?"],
+    "choices": ["Burj Khalifa", "Shanghai Tower", "One World Trade Center", "Willis Tower"],
+    "correctAnswer": "Burj Khalifa"
+  },
+  {
+    "questionWords": ["Which", "composer", "became", "deaf", "yet", "continued", "to", "compose?"],
+    "choices": ["Ludwig van Beethoven", "Johann Bach", "Franz Schubert", "Johannes Brahms"],
+    "correctAnswer": "Ludwig van Beethoven"
+  },
+  {
+    "questionWords": ["In", "which", "country", "is", "the", "Great", "Barrier", "Reef", "located?"],
+    "choices": ["Australia", "USA", "Brazil", "India"],
+    "correctAnswer": "Australia"
+  },
+  {
+    "questionWords": ["Who", "is", "the", "Norse", "god", "of", "thunder?"],
+    "choices": ["Thor", "Odin", "Loki", "Freyr"],
+    "correctAnswer": "Thor"
+  },
+  {
+    "questionWords": ["Which", "artist", "cut", "off", "his", "own", "ear?"],
+    "choices": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Edgar Degas"],
+    "correctAnswer": "Vincent van Gogh"
+  },
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "Spain?"],
+    "choices": ["Madrid", "Barcelona", "Seville", "Valencia"],
+    "correctAnswer": "Madrid"
+  },
+  {
+    "questionWords": ["Which", "fruit", "is", "used", "to", "make", "wine?"],
+    "choices": ["Grapes", "Apples", "Pears", "Plums"],
+    "correctAnswer": "Grapes"
+  },
+  {
+    "questionWords": ["What", "is", "the", "square", "root", "of", "81?"],
+    "choices": ["9", "8", "7", "10"],
+    "correctAnswer": "9"
+  },
+  {
+    "questionWords": ["Which", "planet", "is", "closest", "to", "the", "Sun?"],
+    "choices": ["Mercury", "Venus", "Earth", "Mars"],
+    "correctAnswer": "Mercury"
+  },
+  {
+    "questionWords": ["Who", "wrote", "The", "Odyssey?"],
+    "choices": ["Homer", "Virgil", "Aristotle", "Plato"],
+    "correctAnswer": "Homer"
+  },
+  {
+    "questionWords": ["Which", "nut", "is", "used", "to", "make", "marzipan?"],
+    "choices": ["Almonds", "Peanuts", "Hazelnuts", "Cashews"],
+    "correctAnswer": "Almonds"
+  },
+  {
+    "questionWords": ["Who", "is", "the", "current", "Dalai", "Lama?"],
+    "choices": ["14th Dalai Lama", "13th Dalai Lama", "15th Dalai Lama", "11th Dalai Lama"],
+    "correctAnswer": "14th Dalai Lama"
+  },
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "Russia?"],
+    "choices": ["Moscow", "St. Petersburg", "Kazan", "Sochi"],
+    "correctAnswer": "Moscow"
+  },
+  {
+    "questionWords": ["Which", "continent", "is", "known", "for", "the", "Great", "Wall", "of", "China?"],
+    "choices": ["Asia", "Europe", "Africa", "South America"],
+    "correctAnswer": "Asia"
+  },
+  {
+    "questionWords": ["Who", "invented", "the", "telephone?"],
+    "choices": ["Alexander Graham Bell", "Guglielmo Marconi", "Thomas Edison", "Nikola Tesla"],
+    "correctAnswer": "Alexander Graham Bell"
+  },
+  {
+    "questionWords": ["Which", "musical", "instrument", "has", "88", "keys?"],
+    "choices": ["Piano", "Guitar", "Violin", "Flute"],
+    "correctAnswer": "Piano"
+  },
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "Germany?"],
+    "choices": ["Berlin", "Hamburg", "Munich", "Frankfurt"],
+    "correctAnswer": "Berlin"
+  },
+  {
+    "questionWords": ["Which", "gas", "is", "most", "abundant", "in", "the", "Sun?"],
+    "choices": ["Hydrogen", "Helium", "Oxygen", "Carbon"],
+    "correctAnswer": "Hydrogen"
+  },
+  {
+    "questionWords": ["Who", "wrote", "the", "novel", "Moby-Dick?"],
+    "choices": ["Herman Melville", "Mark Twain", "Edgar Allan Poe", "Nathaniel Hawthorne"],
+    "correctAnswer": "Herman Melville"
+  },
+  {
+    "questionWords": ["Which", "country", "is", "associated", "with", "the", "maple", "leaf?"],
+    "choices": ["Canada", "USA", "Finland", "Sweden"],
+    "correctAnswer": "Canada"
+  },
+  {
+    "questionWords": ["What", "is", "the", "currency", "of", "Mexico?"],
+    "choices": ["Peso", "Dollar", "Real", "Colon"],
+    "correctAnswer": "Peso"
+  },
+  {
+    "questionWords": ["Which", "planet", "has", "a", "day", "longer", "than", "its", "year?"],
+    "choices": ["Venus", "Mercury", "Mars", "Neptune"],
+    "correctAnswer": "Venus"
+  },
+  {
+    "questionWords": ["Who", "painted", "Starry", "Night?"],
+    "choices": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Paul Gauguin"],
+    "correctAnswer": "Vincent van Gogh"
+  },
+  {
+    "questionWords": ["Which", "sea", "lies", "between", "Europe", "and", "Africa?"],
+    "choices": ["Mediterranean Sea", "Red Sea", "Baltic Sea", "Caribbean Sea"],
+    "correctAnswer": "Mediterranean Sea"
+  },
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "Argentina?"],
+    "choices": ["Buenos Aires", "Córdoba", "Rosario", "Mendoza"],
+    "correctAnswer": "Buenos Aires"
+  },
+  {
+    "questionWords": ["Which", "invention", "is", "the", "Wright", "brothers", "known", "for?"],
+    "choices": ["Airplane", "Television", "Radio", "Car"],
+    "correctAnswer": "Airplane"
+  },
+  {
+    "questionWords": ["Who", "wrote", "the", "Iliad?"],
+    "choices": ["Homer", "Virgil", "Sophocles", "Euripides"],
+    "correctAnswer": "Homer"
+  },
+  {
+    "questionWords": ["Which", "bird", "cannot", "fly", "and", "is", "native", "to", "Antarctica?"],
+    "choices": ["Penguin", "Ostrich", "Emu", "Kiwi"],
+    "correctAnswer": "Penguin"
+  },
+  {
+    "questionWords": ["What", "is", "the", "main", "language", "spoken", "in", "Argentina?"],
+    "choices": ["Spanish", "Portuguese", "English", "French"],
+    "correctAnswer": "Spanish"
+  },
+  {
+    "questionWords": ["Who", "is", "the", "protagonist", "in", "the", "Harry", "Potter", "series?"],
+    "choices": ["Harry Potter", "Hermione Granger", "Ron Weasley", "Albus Dumbledore"],
+    "correctAnswer": "Harry Potter"
+  },
+  {
+    "questionWords": ["Which", "continent", "is", "Mount", "Kilimanjaro", "located", "on?"],
+    "choices": ["Africa", "Asia", "Europe", "South America"],
+    "correctAnswer": "Africa"
+  },
+  {
+    "questionWords": ["What", "is", "the", "currency", "of", "China?"],
+    "choices": ["Yuan", "Yen", "Dollar", "Won"],
+    "correctAnswer": "Yuan"
+  },
+  {
+    "questionWords": ["Which", "famous", "physicist", "developed", "the", "general", "theory", "of", "relativity?"],
+    "choices": ["Albert Einstein", "Isaac Newton", "Niels Bohr", "Erwin Schrödinger"],
+    "correctAnswer": "Albert Einstein"
+  },
+  {
+    "questionWords": ["Who", "painted", "the", "Ceiling", "of", "the", "Sistine", "Chapel?"],
+    "choices": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+    "correctAnswer": "Michelangelo"
+  },
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "Greece?"],
+    "choices": ["Athens", "Sparta", "Thessaloniki", "Patras"],
+    "correctAnswer": "Athens"
+  },
+  {
+    "questionWords": ["Which", "organism", "converts", "sunlight", "into", "energy", "through", "photosynthesis?"],
+    "choices": ["Plants", "Animals", "Fungi", "Bacteria"],
+    "correctAnswer": "Plants"
+  },
+  {
+    "questionWords": ["Who", "developed", "the", "polio", "vaccine?"],
+    "choices": ["Jonas Salk", "Edward Jenner", "Louis Pasteur", "Alexander Fleming"],
+    "correctAnswer": "Jonas Salk"
+  },
+  {
+    "questionWords": ["What", "is", "the", "largest", "ocean", "on", "Earth?"],
+    "choices": ["Pacific", "Atlantic", "Indian", "Arctic"],
+    "correctAnswer": "Pacific"
+  },
+  {
+    "questionWords": ["Which", "country", "is", "home", "to", "the", "Eiffel", "Tower?"],
+    "choices": ["France", "Italy", "Germany", "Spain"],
+    "correctAnswer": "France"
+  },
+  {
+    "questionWords": ["Who", "is", "the", "author", "of", "The", "Lord", "of", "the", "Rings?"],
+    "choices": ["J.R.R. Tolkien", "C.S. Lewis", "J.K. Rowling", "George R.R. Martin"],
+    "correctAnswer": "J.R.R. Tolkien"
+  },
+  {
+    "questionWords": ["Which", "desert", "is", "the", "largest", "hot", "desert", "in", "the", "world?"],
+    "choices": ["Sahara", "Gobi", "Kalahari", "Arabian"],
+    "correctAnswer": "Sahara"
+  },
+  {
+    "questionWords": ["What", "is", "the", "capital", "of", "Egypt?"],
+    "choices": ["Cairo", "Alexandria", "Giza", "Luxor"],
+    "correctAnswer": "Cairo"
+  },
+  {
+    "questionWords": ["Which", "English", "king", "had", "six", "wives?"],
+    "choices": ["Henry VIII", "Henry VII", "Richard III", "Edward VI"],
+    "correctAnswer": "Henry VIII"
+  },
+  {
+    "questionWords": ["Who", "discovered", "America", "in", "1492?"],
+    "choices": ["Christopher Columbus", "Ferdinand Magellan", "Vasco da Gama", "James Cook"],
+    "correctAnswer": "Christopher Columbus"
+  },
+  {
+    "questionWords": ["Which", "Italian", "city", "is", "famous", "for", "its", "canals?"],
+    "choices": ["Venice", "Rome", "Milan", "Florence"],
+    "correctAnswer": "Venice"
+  },
+  {
+    "questionWords": ["What", "is", "the", "name", "of", "the", "longest", "river", "in", "South", "America?"],
+    "choices": ["Amazon", "Orinoco", "Parana", "Magdalena"],
+    "correctAnswer": "Amazon"
+  },
+  {
+    "questionWords": ["Which", "continent", "is", "India", "located", "in?"],
+    "choices": ["Asia", "Europe", "Africa", "Australia"],
+    "correctAnswer": "Asia"
+  }
+]

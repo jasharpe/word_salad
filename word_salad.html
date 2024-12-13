@@ -105,70 +105,23 @@
     </footer>
 
     <script>
-        // Questions array: each object has questionWords, choices, and correctAnswer
-        const questions = [
-            {
-                questionWords: ["Which", "country", "in", "Asia", "has", "Tokyo", "as", "its", "capital", "city?"],
-                choices: ["Japan", "China", "South Korea", "Thailand"],
-                correctAnswer: "Japan"
-            },
-            {
-                questionWords: ["In", "what", "year", "did", "the", "Berlin", "Wall", "fall?"],
-                choices: ["1979", "1989", "1999", "2009"],
-                correctAnswer: "1989"
-            },
-            {
-                questionWords: ["Who", "painted", "the", "Mona", "Lisa?"],
-                choices: ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
-                correctAnswer: "Leonardo da Vinci"
-            },
-            {
-                questionWords: ["Which", "planet", "in", "our", "solar", "system", "is", "known", "for", "its", "rings?"],
-                choices: ["Saturn", "Jupiter", "Neptune", "Mars"],
-                correctAnswer: "Saturn"
-            },
-            {
-                questionWords: ["What", "is", "the", "largest", "mammal", "in", "the", "ocean?"],
-                choices: ["Blue whale", "Elephant", "Shark", "Hippopotamus"],
-                correctAnswer: "Blue whale"
-            },
-            {
-                questionWords: ["In", "which", "country", "are", "the", "Pyramids", "of", "Giza", "located?"],
-                choices: ["Egypt", "Mexico", "Peru", "China"],
-                correctAnswer: "Egypt"
-            },
-            {
-                questionWords: ["Which", "gas", "do", "plants", "absorb", "from", "the", "atmosphere?"],
-                choices: ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
-                correctAnswer: "Carbon dioxide"
-            },
-            {
-                questionWords: ["Which", "metal", "is", "a", "liquid", "at", "room", "temperature?"],
-                choices: ["Mercury", "Iron", "Aluminum", "Copper"],
-                correctAnswer: "Mercury"
-            },
-            {
-                questionWords: ["Who", "was", "the", "first", "person", "to", "set", "foot", "on", "the", "Moon?"],
-                choices: ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
-                correctAnswer: "Neil Armstrong"
-            },
-            {
-                questionWords: ["What", "is", "the", "capital", "city", "of", "France?"],
-                choices: ["Berlin", "Rome", "Paris", "Madrid"],
-                correctAnswer: "Paris"
-            },
-            {
-                questionWords: ["Which", "continent", "is", "the", "Sahara", "Desert", "located", "in?"],
-                choices: ["Africa", "Asia", "Australia", "North America"],
-                correctAnswer: "Africa"
-            }
-        ];
-
+        let questions = [];
         let correctCount = 0;
         let incorrectCount = 0;
         let currentQuestion = null;
-        let showingAnswer = false; // To track if we are showing unscrambled question after answering
-        
+        let showingAnswer = false;
+
+        async function loadQuestions() {
+            const response = await fetch('/questions.json');
+            questions = await response.json();
+            startGame();
+        }
+
+        function startGame() {
+            updateScoreboard();
+            displayQuestion();
+        }
+
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -179,17 +132,11 @@
 
         function scrambleWord(word) {
             // Keep first and last character in place, scramble the middle characters
-            if (word.length <= 3) return word; // Too short to meaningfully scramble
+            if (word.length <= 3) return word;
             const firstLetter = word[0];
             const lastLetter = word[word.length - 1];
-            
-            // Extract the middle portion without first and last char
             const middle = word.slice(1, -1).split('');
-            
-            // Shuffle the middle portion
             shuffleArray(middle);
-            
-            // Reconstruct the word
             return firstLetter + middle.join('') + lastLetter;
         }
 
@@ -270,9 +217,8 @@
             feedbackEl.textContent = `You answered all questions! Final score: ${correctCount} correct, ${incorrectCount} incorrect.`;
         }
 
-        // Initialize the game
-        updateScoreboard();
-        displayQuestion();
+        // Start loading questions
+        loadQuestions();
     </script>
 </body>
 </html>
