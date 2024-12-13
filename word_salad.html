@@ -112,7 +112,7 @@
         let showingAnswer = false;
 
         async function loadQuestions() {
-            const response = await fetch('/questions.json');
+            const response = await fetch('questions.json'); // Relative path
             questions = await response.json();
             startGame();
         }
