@@ -18,12 +18,19 @@
             text-align: center;
         }
 
+        .scoreboard {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
         .question-container {
             margin-top: 30px;
             padding: 20px;
             background: #ffffff;
             border: 1px solid #ddd;
             border-radius: 5px;
+            min-height: 200px;
         }
 
         .scrambled-words {
@@ -77,6 +84,10 @@
     <h1>Word Salad</h1>
     <h2>Unscramble the question and answer it!</h2>
 
+    <div class="scoreboard" id="scoreboard">
+        Correct: 0 | Incorrect: 0
+    </div>
+
     <div class="question-container">
         <div class="scrambled-words" id="scrambled-words">
             <!-- Scrambled question will appear here -->
@@ -94,17 +105,69 @@
     </footer>
 
     <script>
-        // A simple example question
-        // Original question: "Which country in Asia has Tokyo as its capital city?"
-        // Multiple choice answers: "Japan", "China", "South Korea", "Thailand"
-        
-        const questionWords = [
-            "Which", "country", "in", "Asia", "has", "Tokyo", "as", "its", "capital", "city?"
+        // Questions array: each object has questionWords, choices, and correctAnswer
+        const questions = [
+            {
+                questionWords: ["Which", "country", "in", "Asia", "has", "Tokyo", "as", "its", "capital", "city?"],
+                choices: ["Japan", "China", "South Korea", "Thailand"],
+                correctAnswer: "Japan"
+            },
+            {
+                questionWords: ["In", "what", "year", "did", "the", "Berlin", "Wall", "fall?"],
+                choices: ["1979", "1989", "1999", "2009"],
+                correctAnswer: "1989"
+            },
+            {
+                questionWords: ["Who", "painted", "the", "Mona", "Lisa?"],
+                choices: ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+                correctAnswer: "Leonardo da Vinci"
+            },
+            {
+                questionWords: ["Which", "planet", "in", "our", "solar", "system", "is", "known", "for", "its", "rings?"],
+                choices: ["Saturn", "Jupiter", "Neptune", "Mars"],
+                correctAnswer: "Saturn"
+            },
+            {
+                questionWords: ["What", "is", "the", "largest", "mammal", "in", "the", "ocean?"],
+                choices: ["Blue whale", "Elephant", "Shark", "Hippopotamus"],
+                correctAnswer: "Blue whale"
+            },
+            {
+                questionWords: ["In", "which", "country", "are", "the", "Pyramids", "of", "Giza", "located?"],
+                choices: ["Egypt", "Mexico", "Peru", "China"],
+                correctAnswer: "Egypt"
+            },
+            {
+                questionWords: ["Which", "gas", "do", "plants", "absorb", "from", "the", "atmosphere?"],
+                choices: ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
+                correctAnswer: "Carbon dioxide"
+            },
+            {
+                questionWords: ["Which", "metal", "is", "a", "liquid", "at", "room", "temperature?"],
+                choices: ["Mercury", "Iron", "Aluminum", "Copper"],
+                correctAnswer: "Mercury"
+            },
+            {
+                questionWords: ["Who", "was", "the", "first", "person", "to", "set", "foot", "on", "the", "Moon?"],
+                choices: ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
+                correctAnswer: "Neil Armstrong"
+            },
+            {
+                questionWords: ["What", "is", "the", "capital", "city", "of", "France?"],
+                choices: ["Berlin", "Rome", "Paris", "Madrid"],
+                correctAnswer: "Paris"
+            },
+            {
+                questionWords: ["Which", "continent", "is", "the", "Sahara", "Desert", "located", "in?"],
+                choices: ["Africa", "Asia", "Australia", "North America"],
+                correctAnswer: "Africa"
+            }
         ];
-        const correctAnswer = "Japan";
-        const possibleAnswers = ["Japan", "China", "South Korea", "Thailand"];
 
-        // Shuffle the question words
+        let correctCount = 0;
+        let incorrectCount = 0;
+        let currentQuestion = null;
+        
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -113,39 +176,73 @@
             return array;
         }
 
-        // Display the scrambled question
-        function displayQuestion() {
-            const scrambled = shuffleArray([...questionWords]);
-            const scrambledText = scrambled.join(" ");
-            document.getElementById("scrambled-words").textContent = scrambledText;
+        function updateScoreboard() {
+            const scoreboardEl = document.getElementById("scoreboard");
+            scoreboardEl.textContent = `Correct: ${correctCount} | Incorrect: ${incorrectCount}`;
         }
 
-        // Display choices
-        function displayChoices() {
+        function displayQuestion() {
+            // If no more questions, end game
+            if (questions.length === 0) {
+                endGame();
+                return;
+            }
+
+            // Pick a random question
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            currentQuestion = questions.splice(randomIndex, 1)[0]; // remove the chosen question
+
+            // Scramble question words
+            const scrambled = shuffleArray([...currentQuestion.questionWords]);
+            const scrambledText = scrambled.join(" ");
+            document.getElementById("scrambled-words").textContent = scrambledText;
+
+            // Display choices
             const choicesContainer = document.getElementById("choices");
-            possibleAnswers.forEach(answer => {
+            choicesContainer.innerHTML = "";
+            currentQuestion.choices.forEach(answer => {
                 const btn = document.createElement("button");
                 btn.textContent = answer;
                 btn.addEventListener("click", () => checkAnswer(answer));
                 choicesContainer.appendChild(btn);
             });
+
+            // Clear feedback
+            document.getElementById("feedback").textContent = "";
+            document.getElementById("feedback").className = "feedback";
         }
 
-        // Check the answer
         function checkAnswer(selected) {
             const feedbackEl = document.getElementById("feedback");
-            if (selected === correctAnswer) {
-                feedbackEl.textContent = "Correct! The answer is indeed " + correctAnswer + ".";
+            if (selected === currentQuestion.correctAnswer) {
+                feedbackEl.textContent = "Correct! The answer is indeed " + currentQuestion.correctAnswer + ".";
                 feedbackEl.className = "feedback correct";
+                correctCount++;
             } else {
-                feedbackEl.textContent = "Incorrect. Try again!";
+                feedbackEl.textContent = "Incorrect. The correct answer is " + currentQuestion.correctAnswer + ".";
                 feedbackEl.className = "feedback incorrect";
+                incorrectCount++;
             }
+
+            updateScoreboard();
+
+            // After a short delay, show the next question
+            setTimeout(displayQuestion, 2000);
+        }
+
+        function endGame() {
+            const scrambledEl = document.getElementById("scrambled-words");
+            const choicesEl = document.getElementById("choices");
+            const feedbackEl = document.getElementById("feedback");
+
+            scrambledEl.textContent = "Game Over!";
+            choicesEl.innerHTML = "";
+            feedbackEl.textContent = `You answered all questions! Final score: ${correctCount} correct, ${incorrectCount} incorrect.`;
         }
 
         // Initialize the game
+        updateScoreboard();
         displayQuestion();
-        displayChoices();
     </script>
 
 </body>
