@@ -168,10 +168,13 @@
             const scrambledText = scrambled.join(" ");
             document.getElementById("scrambled-words").textContent = scrambledText;
 
+            // Randomize choices order
+            const shuffledChoices = shuffleArray([...currentQuestion.choices]);
+
             // Display choices
             const choicesContainer = document.getElementById("choices");
             choicesContainer.innerHTML = "";
-            currentQuestion.choices.forEach(answer => {
+            shuffledChoices.forEach(answer => {
                 const btn = document.createElement("button");
                 btn.textContent = answer;
                 btn.addEventListener("click", () => checkAnswer(answer));
