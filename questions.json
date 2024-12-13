@@ -1070,11 +1070,6 @@
     "correctAnswer": "Jupiter"
 },
 {
-    "questionWords": ["What", "is", "the", "main", "ingredient", "in", "sushi?"],
-    "choices": ["Vinegared Rice", "Raw Fish", "Nori", "Ginger"],
-    "correctAnswer": "Vinegared Rice"
-},
-{
     "questionWords": ["Who", "wrote", "the", "novel", "Frankenstein?"],
     "choices": ["Mary Shelley", "Bram Stoker", "H.G. Wells", "Jane Austen"],
     "correctAnswer": "Mary Shelley"
